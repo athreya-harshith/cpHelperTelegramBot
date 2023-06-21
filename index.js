@@ -2,8 +2,8 @@ const { Telegraf } = require('telegraf');
 const axios = require('axios');
 var sha512 = require('js-sha512');
 require('dotenv').config()
-// console.log(process.env)
-// console.log(process.env.hello);
+
+
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.start((ctx) => ctx.reply(`WELCOME I am a bot for algorithms\n1.use / to give command\n2.use /commands to check for the available algorithms`));
